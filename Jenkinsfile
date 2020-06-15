@@ -18,6 +18,11 @@ pipeline {
                 sh 'pip3 install -r requirements.txt'
             }
         }
+	stage('Tom is a CI-CD Master') {
+	    steps {
+		echo 'Tom is great!'
+	    }
+	}
         stage('Run tests') {
             steps {
                 sh './run_tests.sh'
