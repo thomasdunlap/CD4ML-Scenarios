@@ -23,12 +23,12 @@ pipeline {
 		echo 'Tom is great!'
 	    }
 	}
-        stage('Loves') {
+        stage('Running Tests') {
             steps {
                 sh './run_tests.sh'
             }
         }
-        stage('Tasha') {
+        stage('Running ML Pipeline') {
             steps {
                 sh 'python3 run_python_script.py pipeline'
             }
