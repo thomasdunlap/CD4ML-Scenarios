@@ -18,11 +18,7 @@ pipeline {
                 sh 'pip3 install -r requirements.txt'
             }
         }
-	stage('Tom') {
-	    steps {
-		echo 'Tom is great!'
-	    }
-	}
+		
         stage('Running Tests') {
             steps {
                 sh './run_tests.sh'
